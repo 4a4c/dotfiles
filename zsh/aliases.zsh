@@ -39,6 +39,7 @@ alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\
 alias chromemd='open -a "Google Chrome" *.md' # launch chrome and open all .md files in current directory
 alias reload-bash='. ~/.bash_profile'
 alias reload-zsh='. ~/.zshrc'
+alias D='~/Desktop'
 
 #### functions ####
 
