@@ -4,3 +4,4 @@ tap 'homebrew/bundle'
 
 brew 'git'
 brew 'wget'
+brew 'zsh'
