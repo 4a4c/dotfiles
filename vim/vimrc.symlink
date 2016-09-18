@@ -1,0 +1,2 @@
+" load pathogen
+source $DOTFILES/vim/autoload/pathogen.vim
