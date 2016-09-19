@@ -12,7 +12,5 @@ colorscheme peaksea
 set background=dark 
 
 "" my prefs ""
-" set number when instert and relative when normal
 set number
-autocmd InsertEnter * :set number
-autocmd InsertLeave * :set relativenumber
+set relativenumber
