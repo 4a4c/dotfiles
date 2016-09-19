@@ -2,3 +2,14 @@
 source $DOTFILES/vim/bundle/vim-pathogen/autoload/pathogen.vim
 " set bundle directory
 execute pathogen#infect('bundle/{}', '$DOTFILES/vim/bundle/{}')
+
+" set peaksea colorscheme
+" feel free to choose :set background=light for a different style 
+colorscheme peaksea
+set background=dark
+
+"" my prefs ""
+" set number when instert and relative when normal
+set number
+autocmd InsertEnter * :set number
+autocmd InsertLeave * :set relativenumber
