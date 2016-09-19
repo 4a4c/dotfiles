@@ -1,4 +1,4 @@
 " load pathogen
-source $DOTFILES/vim/autoload/pathogen.vim
+source $DOTFILES/vim/bundle/vim-pathogen/autoload/pathogen.vim
 " set bundle directory
 execute pathogen#infect('bundle/{}', '$DOTFILES/vim/bundle/{}')
