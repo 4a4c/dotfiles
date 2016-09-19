@@ -3,3 +3,4 @@ vim-pathogen,https://github.com/tpope/vim-pathogen.git
 vim-sensible,https://github.com/tpope/vim-sensible.git
 vim-markdown,https://github.com/tpope/vim-markdown.git
 vim-peaksea,https://github.com/vim-scripts/peaksea.git
+vim-airline,https://github.com/vim-airline/vim-airline.git
