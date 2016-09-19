@@ -3,10 +3,13 @@ source $DOTFILES/vim/bundle/vim-pathogen/autoload/pathogen.vim
 " set bundle directory
 execute pathogen#infect('bundle/{}', '$DOTFILES/vim/bundle/{}')
 
-" set peaksea colorscheme
+" set colorscheme to peaksea
+if ! has("gui_running") 
+    set t_Co=256 
+endif 
 " feel free to choose :set background=light for a different style 
-colorscheme peaksea
-set background=dark
+colorscheme peaksea 
+set background=dark 
 
 "" my prefs ""
 " set number when instert and relative when normal
