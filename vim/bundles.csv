@@ -1,0 +1,3 @@
+NAME,REPO
+vim-pathogen,https://github.com/tpope/vim-pathogen.git
+vim-sensible,https://github.com/tpope/vim-sensible.git
