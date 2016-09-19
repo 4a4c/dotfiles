@@ -17,7 +17,7 @@ tail -n +2 $VIM_DIR/bundles.csv | while read line; do
 	BUNDLE_REPO=$(echo $CURRENT_LINE | awk -F ',' '{print $2}')
 	
 	# echo message
-	echo "downloading $BUNDLE_NAME from $BUNDLE_REPO"
+	echo "checking for $BUNDLE_NAME from $BUNDLE_REPO"
 
 	if [ ! -d  $BUNDLE_DIR/$BUNDLE_NAME ]; then
 		git submodule add --force $BUNDLE_REPO $BUNDLE_DIR/$BUNDLE_NAME
