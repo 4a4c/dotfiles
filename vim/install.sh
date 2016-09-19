@@ -14,8 +14,9 @@ if [ ! -d  $BUNDLE_DIR/$BUNDLE_NAME ]; then
 	git submodule add $BUNDLE_REPO $BUNDLE_DIR/$BUNDLE_NAME
 fi
 
-# install sensible-vim
-#BUNDLE_DIR='vim-sensible'
-#if [ ! -d $DOTFILES/vim/bundle/$BUNDLE_DIR ]; then
-#  git clone git://github.com/tpope/vim-sensible.git $DOTFILES/vim/bundle/$BUNDLE_DIR
-#fi
+BUNDLE_NAME=vim-sensible
+BUNDLE_REPO="https://github.com/tpope/vim-sensible.git"
+if [ ! -d  $BUNDLE_DIR/$BUNDLE_NAME ]; then
+	git submodule add $BUNDLE_REPO $BUNDLE_DIR/$BUNDLE_NAME
+fi
+
