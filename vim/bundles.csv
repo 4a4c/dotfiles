@@ -5,3 +5,4 @@ vim-markdown,https://github.com/tpope/vim-markdown.git
 vim-peaksea,https://github.com/vim-scripts/peaksea.git
 vim-airline,https://github.com/vim-airline/vim-airline.git
 vim-airline-themes,https://github.com/vim-airline/vim-airline-themes.git
+vim-fugitive,https://github.com/tpope/vim-fugitive.git

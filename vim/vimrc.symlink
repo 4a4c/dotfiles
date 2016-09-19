@@ -11,6 +11,11 @@ endif
 colorscheme peaksea 
 set background=dark 
 
+" airline configuration
+" https://github.com/vim-airline/vim-airline/wiki/FAQ
+let g:airline_theme='luna'
+let g:airline_powerline_fonts = 1
+
 "" my prefs ""
 set number
 set relativenumber
