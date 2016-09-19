@@ -8,3 +8,6 @@ atom.symlink/storage
 atom.symlink/themes
 
 git/gitconfig.local.symlink
+
+# vim modules
+vim/bundle/vim-airline/.netrwhist
