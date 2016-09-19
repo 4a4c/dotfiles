@@ -3,6 +3,8 @@ source $DOTFILES/vim/bundle/vim-pathogen/autoload/pathogen.vim
 " set bundle directory
 execute pathogen#infect('bundle/{}', '$DOTFILES/vim/bundle/{}')
 
+" setup powerline fonts
+
 " set colorscheme to peaksea
 if ! has("gui_running") 
     set t_Co=256 
