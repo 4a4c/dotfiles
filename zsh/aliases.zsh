@@ -39,6 +39,13 @@ alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\
 alias chromemd='open -a "Google Chrome" *.md' # launch chrome and open all .md files in current directory
 alias reload-bash='. ~/.bash_profile'
 alias reload-zsh='. ~/.zshrc'
+alias D='~/Desktop'
+alias H='~'
+alias tmux='tmux -2' # set tmux to start in 256
+alias t='tmux'
+alias tl='tmux ls' # list sessions
+alias ta='tmux attach -t' # attach to session
+alias ts='tmux new -s' # new sessionname
 
 #### functions ####
 

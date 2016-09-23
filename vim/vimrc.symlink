@@ -1,0 +1,26 @@
+" load pathogen
+source $DOTFILES/vim/bundle/vim-pathogen/autoload/pathogen.vim
+" set bundle directory
+execute pathogen#infect('bundle/{}', '$DOTFILES/vim/bundle/{}')
+
+" setup powerline fonts
+
+" set colorscheme to peaksea
+if ! has("gui_running") 
+    set t_Co=256 
+endif 
+" feel free to choose :set background=light for a different style 
+colorscheme peaksea 
+set background=dark 
+
+" airline configuration
+" https://github.com/vim-airline/vim-airline/wiki/FAQ
+let g:airline_theme='luna'
+let g:airline_powerline_fonts = 1
+
+" enable markdown preview with grip using ctrl-p
+let vim_markdown_preview_github=1
+
+"" my prefs ""
+set number
+set relativenumber
