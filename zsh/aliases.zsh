@@ -46,6 +46,7 @@ alias t='tmux'
 alias tl='tmux ls' # list sessions
 alias ta='tmux attach -t' # attach to session
 alias ts='tmux new -s' # new sessionname
+alias tsd='tmux new -d -s' # new detatched session
 
 #### functions ####
 

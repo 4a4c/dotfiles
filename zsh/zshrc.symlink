@@ -45,3 +45,6 @@ unset config_files
 
 # load oh-my-zsh
 source $ZSH/oh-my-zsh.sh
+
+# set to vim mode https://dougblack.io/words/zsh-vi-mode.html
+bindkey -e
