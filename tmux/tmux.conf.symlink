@@ -102,3 +102,10 @@ set -g message-fg colour232
 set -g message-bg colour166
 
 # }
+
+##########################
+### END DESIGN CHANGES ###
+##########################
+
+# set statusbar to match airline
+if-shell "test -f $DOTFILES/tmux/tmuxline.snapshot" "source $DOTFILES/tmux/tmuxline.snapshot"

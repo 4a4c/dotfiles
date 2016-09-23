@@ -42,6 +42,9 @@ alias reload-zsh='. ~/.zshrc'
 alias D='~/Desktop'
 alias H='~'
 alias tmux='tmux -2' # set tmux to start in 256
+alias t='tmux'
+alias tl='tmux ls'
+alias ta='tmux attach -t'
 
 #### functions ####
 

@@ -1,6 +1,10 @@
 # tmux config
 
-Based on the following sites
+commands
+
+https://learnxinyminutes.com/docs/tmux/
+
+config based on the following sites
 
 http://www.hamvocke.com/blog/a-guide-to-customizing-your-tmux-conf/
 
