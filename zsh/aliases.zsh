@@ -41,6 +41,8 @@ alias reload-bash='. ~/.bash_profile'
 alias reload-zsh='. ~/.zshrc'
 alias D='~/Desktop'
 alias H='~'
+alias tmux='tmux -2' # set tmux to start in 256
+
 #### functions ####
 
 # Set functions to show or hide hidden files in Finder

@@ -18,7 +18,7 @@ set background=dark
 let g:airline_theme='luna'
 let g:airline_powerline_fonts = 1
 
-" enable markdown preview with grip
+" enable markdown preview with grip using ctrl-p
 let vim_markdown_preview_github=1
 
 "" my prefs ""
