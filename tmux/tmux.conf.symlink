@@ -31,6 +31,9 @@ bind r source-file ~/.tmux.conf
 # don't rename windows automatically so I can do it via ,
 set-option -g allow-rename off
 
+# allows C-a a to send C-a to iterm
+bind a send-prefix
+
 ######################
 ### DESIGN CHANGES ###
 ######################
