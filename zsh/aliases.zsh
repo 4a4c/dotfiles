@@ -40,7 +40,7 @@ alias chromemd='open -a "Google Chrome" *.md' # launch chrome and open all .md f
 alias reload-bash='. ~/.bash_profile'
 alias reload-zsh='. ~/.zshrc'
 alias D='~/Desktop'
-
+alias H='~'
 #### functions ####
 
 # Set functions to show or hide hidden files in Finder
