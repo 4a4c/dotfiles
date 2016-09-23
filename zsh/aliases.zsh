@@ -43,8 +43,9 @@ alias D='~/Desktop'
 alias H='~'
 alias tmux='tmux -2' # set tmux to start in 256
 alias t='tmux'
-alias tl='tmux ls'
-alias ta='tmux attach -t'
+alias tl='tmux ls' # list sessions
+alias ta='tmux attach -t' # attach to session
+alias ts='tmux new -s' # new sessionname
 
 #### functions ####
 
