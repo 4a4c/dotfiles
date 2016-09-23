@@ -22,5 +22,11 @@ let g:airline_powerline_fonts = 1
 let vim_markdown_preview_github=1
 
 "" my prefs ""
+" set numbers
 set number
 set relativenumber
+
+" set mappings to open files http://stackoverflow.com/questions/1708623/opening-files-in-the-same-folder-as-the-current-file-in-vim
+map ,e :e <C-R>=expand("%:p:h") . "/" <CR>
+map ,t :tabe <C-R>=expand("%:p:h") . "/" <CR>
+map ,s :split <C-R>=expand("%:p:h") . "/" <CR>
