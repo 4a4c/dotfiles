@@ -25,3 +25,7 @@ let vim_markdown_preview_github=1
 " set numbers
 set number
 set relativenumber
+
+" set text highlight after 80
+highlight ColorColumn ctermbg=darkgrey
+call matchadd('ColorColumn', '\%81v', 100)
