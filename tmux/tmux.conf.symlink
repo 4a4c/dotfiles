@@ -31,8 +31,12 @@ bind r source-file ~/.tmux.conf
 # don't rename windows automatically so I can do it via ,
 set-option -g allow-rename off
 
-# allows C-a a to send C-a to iterm
-bind a send-prefix
+# set cut/paste - http://www.rushiagr.com/blog/2016/06/16/everything-you-need-to-know-about-tmux-copy-pasting/
+setw -g mode-keys vi
+bind P paste-buffer
+bind-key -t vi-copy 'v' begin-selection
+bind-key -t vi-copy 'y' copy-selection
+bind-key -t vi-copy 'r' rectangle-toggle
 
 ######################
 ### DESIGN CHANGES ###
