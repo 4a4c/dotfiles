@@ -29,3 +29,6 @@ set relativenumber
 " set text highlight after 80
 highlight ColorColumn ctermbg=darkgrey
 call matchadd('ColorColumn', '\%81v', 100)
+
+" set jj to escape
+:imap jj <Esc>
