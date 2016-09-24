@@ -30,3 +30,4 @@
 [submodule "vim/bundle/tmuxline"]
 	path = vim/bundle/tmuxline
 	url = https://github.com/edkolev/tmuxline.vim.git
+	ignore = dirty

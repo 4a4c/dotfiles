@@ -22,5 +22,13 @@ let g:airline_powerline_fonts = 1
 let vim_markdown_preview_github=1
 
 "" my prefs ""
+" set numbers
 set number
 set relativenumber
+
+" set text highlight after 80
+highlight ColorColumn ctermbg=darkgrey
+call matchadd('ColorColumn', '\%81v', 100)
+
+" set jj to escape
+:imap jj <Esc>
