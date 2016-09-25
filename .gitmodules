@@ -31,3 +31,6 @@
 	path = vim/bundle/tmuxline
 	url = https://github.com/edkolev/tmuxline.vim.git
 	ignore = dirty
+[submodule "vim/bundle/auto-pairs"]
+	path = vim/bundle/auto-pairs
+	url = https://github.com/jiangmiao/auto-pairs.git
