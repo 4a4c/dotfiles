@@ -5,9 +5,13 @@
 set -g default-terminal "screen-256color"
 
 # remap prefix from 'C-b' to 'C-a'
-unbind C-b
-set-option -g prefix C-a
-bind-key C-a send-prefix
+#unbind C-b
+#set-option -g prefix C-a
+#bind-key C-a send-prefix
+
+# set prefix2 map to C-j
+set -g prefix2 C-j
+bind-key C-j send-prefix -2
 
 # split panes using | and -
 unbind '"'
