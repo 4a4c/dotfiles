@@ -13,9 +13,9 @@ bind-key j set-option -g prefix2 ` \; bind ` send-prefix -2 \; display-message "
 # split panes using | and -
 unbind '"'
 unbind %
-bind | split-window -h
-bind \ split-window -h
-bind - split-window -v
+bind | split-window -h -c "#{pane_current_path}"
+bind \ split-window -h -c "#{pane_current_path}"
+bind - split-window -v -c "#{pane_current_path}"
 
 # Set the base index for windows and panes to 1 instead of 0
 set -g base-index 1

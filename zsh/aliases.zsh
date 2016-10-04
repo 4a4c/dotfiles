@@ -47,6 +47,8 @@ alias tl='tmux ls' # list sessions
 alias ta='tmux attach -t' # attach to session
 alias ts='tmux new -s' # new sessionname
 alias tsd='tmux new -d -s' # new detatched session
+alias cd-notes='cd $HOME/gitProjects/github.com/4a4c/tech-notes'
+alias cd-dot='cd $DOTFILES'
 
 #### functions ####
 
