@@ -4,21 +4,25 @@
 # set color
 set -g default-terminal "screen-256color"
 
-# remap prefix from 'C-b' to 'C-a'
-#unbind C-b
-#set-option -g prefix C-a
-#bind-key C-a send-prefix
-
-# set prefix2 map to C-j
-set -g prefix2 C-j
-bind-key C-j send-prefix -2
+# set prefix2 to C-j by default with option to go to ` with via j
+set-option -g prefix2 `
+bind ` send-prefix -2
+bind-key C-j set-option -g prefix2 C-j \; display-message "prefix2 set to C-j"
+bind-key j set-option -g prefix2 ` \; bind ` send-prefix -2 \; display-message "prefix2 set to `"
 
 # split panes using | and -
 unbind '"'
 unbind %
-bind | split-window -h
-bind \ split-window -h
-bind - split-window -v
+bind | split-window -h -c "#{pane_current_path}"
+bind \ split-window -h -c "#{pane_current_path}"
+bind - split-window -v -c "#{pane_current_path}"
+
+# Set the base index for windows and panes to 1 instead of 0
+set -g base-index 1
+set-window-option -g pane-base-index 1
+
+# Renumber windows sequentially after closing any of them
+set -g renumber-windows on
 
 # switch panes using Alt-arrow without prefix
 bind -n M-Left select-pane -L
@@ -26,11 +30,21 @@ bind -n M-Right select-pane -R
 bind -n M-Up select-pane -U
 bind -n M-Down select-pane -D
 
+# Pane resizing
+bind -r H resize-pane -L 5
+bind -r J resize-pane -D 5
+bind -r K resize-pane -U 5
+bind -r L resize-pane -R 5
+
+# Move windows
+bind-key -n C-H swap-window -t -1
+bind-key -n C-L swap-window -t +1
+
 # Enable mouse control (clickable windows, panes, resizable panes)
 set -g mouse on
 
 # reload config file (change file location to your the tmux.conf you want to use)
-bind r source-file ~/.tmux.conf
+bind r source-file ~/.tmux.conf \; display-message "Configuration reloaded..." 
 
 # don't rename windows automatically so I can do it via ,
 set-option -g allow-rename off
