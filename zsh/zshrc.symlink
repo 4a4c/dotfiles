@@ -58,5 +58,5 @@ if [ -f '/Users/jluna001c/google-cloud-sdk/completion.zsh.inc' ]; then source '/
 # kubectl completion
 source <(kubectl completion zsh)
 
-# The next line enables kube-ps1
-if [ -f '/Users/jluna001c/gitProjects/github.com/jonmosco/kube-ps1/kube-ps1.sh' ]; then source '/Users/jluna001c/gitProjects/github.com/jonmosco/kube-ps1/kube-ps1.sh'; PROMPT='$(kube_ps1)'$PROMPT ;fi
+# The next line enables kube-ps1 - https://github.com/jonmosco/kube-ps1
+if [ -f '/Users/jluna001c/gitProjects/github.com/jonmosco/kube-ps1/kube-ps1.sh' ]; then source '/Users/jluna001c/gitProjects/github.com/jonmosco/kube-ps1/kube-ps1.sh'; PROMPT='$(kube_ps1)'$PROMPT; KUBE_PS1_SYMBOL_USE_IMG=true ;fi
