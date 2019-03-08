@@ -53,6 +53,7 @@ alias watch='watch '
 
 ## Kube Aliases
 alias k="kubectl"
+alias kcx="kubectl config use-context"
 alias kg='kubectl get'
 alias kgp='kubectl get pods -o wide'
 alias kgn='kubectl get nodes'
